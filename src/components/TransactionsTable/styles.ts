@@ -15,15 +15,22 @@ export const Container = styled.div`
       line-height: 1.5rem;
     }
 
+
     td {
       padding: 1rem 2rem;
       border: 0;
       background: var(--shape);
       color: var(--text-body);
-      border-radius: 0.25rem;
 
       &:first-child {
         color: var(--text-title);
+        border-bottom-left-radius: 0.25rem;
+        border-top-left-radius: 0.25rem;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
       }
 
       &.deposit {
